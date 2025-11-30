@@ -3,6 +3,10 @@
 ## Overview
 This project is a full-stack web application consisting of a React frontend and an Express/Node.js backend. It includes features for authentication, attendance tracking, and dashboard reporting.
 
+**Deployments:**
+- Client (Frontend): Deployed on Vercel
+- Backend (Server): Deployed on AWS EC2
+
 ## Setup Instructions
 
 ### Prerequisites
