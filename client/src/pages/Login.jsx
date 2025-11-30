@@ -19,7 +19,6 @@ const Login = () => {
                 navigate('/dashboard');
             }
         } catch (err) {
-            // Error handled in store
         }
     };
 
@@ -33,6 +32,8 @@ const Login = () => {
                         </div>
                         <h2 className="text-2xl font-bold text-text-main">Welcome Back</h2>
                         <p className="text-text-muted mt-2">Sign in to your account to continue</p>
+                        <p className="text-xs text-text-muted mt-2">Manager: manager@example.com / password123</p>
+                        <p className="text-xs text-text-muted">Employee: mike@example.com / password123</p>
                     </div>
 
                     {error && (
