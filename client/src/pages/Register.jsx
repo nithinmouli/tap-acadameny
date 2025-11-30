@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
 import useAuthStore from '../store/useAuthStore';
-import { User, Mail, Lock, Briefcase, Hash, ArrowRight, UserPlus, AlertCircle, Building2 } from 'lucide-react';
+import { User, Mail, Lock, Briefcase, Hash, ArrowRight, UserPlus, AlertCircle, Building2, Shield } from 'lucide-react';
 
 const Register = () => {
     const navigate = useNavigate();
@@ -142,6 +142,25 @@ const Register = () => {
                                     className="block w-full pl-10 pr-3 py-2.5 border border-secondary/20 rounded-xl bg-background text-text-main placeholder-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors"
                                     placeholder="••••••••"
                                 />
+                            </div>
+                        </div>
+
+                        <div>
+                            <label className="block text-sm font-medium text-text-main mb-2">Role</label>
+                            <div className="relative">
+                                <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                                    <Shield className="h-5 w-5 text-text-muted" />
+                                </div>
+                                <select
+                                    name="role"
+                                    required
+                                    value={formData.role}
+                                    onChange={handleChange}
+                                    className="block w-full pl-10 pr-3 py-2.5 border border-secondary/20 rounded-xl bg-background text-text-main placeholder-text-muted/50 focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-colors appearance-none"
+                                >
+                                    <option value="employee">Employee</option>
+                                    <option value="manager">Manager</option>
+                                </select>
                             </div>
                         </div>
 
